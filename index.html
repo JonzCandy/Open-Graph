@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:url" content="https://jonzcandy.github.io/Open-Graph" />
+        <meta property="og:type" content="forms" />
         <meta property="og:title" content="Cantina do Jaun" />
         <meta property="og:description" content="Aqui você encontra lanches de outros mundo, vindos direto do espaço, escolha sua comida, escolha seu lanche e lembre dos animais!" />
         <meta property="og:image" content="https://i2.wp.com/passeiosbaratosemsp.com.br/wp-content/uploads/2017/10/mama-concheta.jpg?fit=940%2C705&ssl=1" />
@@ -13,8 +14,93 @@
         <title>Cantina do Jaun</title>
     </head>
 
-    <body>
-    
+    <body background="https://i2.wp.com/passeiosbaratosemsp.com.br/wp-content/uploads/2017/10/mama-concheta.jpg?fit=940%2C705&ssl=1">
+        
+        <header style="text-align: center; background-image: radial-gradient( rgba(255,255,255,0.5), rgba(255,0,0,1));">
+            <h1>
+                Bem vindo a Cantina do Jaun<br />
+                Vamos ver como satisfazer sua fome?
+            </h1>
+        </header>
+
+        <main>
+        <form  style="text-align: center; padding: 20px; margin: auto;  max-width: 600px; background-color: rgba(150, 182, 64, 0.5);">
+            <fieldset style="border-radius: 20px; border-width: 15px;">
+                <h1>Solicitação a Cozinha</h1>
+                <fieldset>
+                    <legend><h3>Quem está atendendo a mesa?</h3></legend>
+                    <p>
+                        <label for="worker">Funcionario:</label><br />
+                        <input type="text" name="worker" />
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend><h3>Informações do Cliente</h3> </legend>
+                    <p>
+                        <label for="cliente">Nome do Cliente:</label><br />
+                        <input type="text" name="cliente" id="cliente" />
+                        <br />
+                        <label for="mesa">Numero da mesa:</label><br />
+                        <input type="number" name="mesa" id="mesa" required min="1" max="20" />
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend><h2>Pedido</h2></legend>
+                    <p>
+                        <fieldset>
+                            <legend><h3>Almoço</h3></legend>
+                            <p>
+                                <input type="radio" name="comida" id="comida-1" value="macarrao" />
+                                <label for="comida_1">Macarrão</label><br />
+                                <input type="radio" name="comida" id="comida-2" value="canja" />
+                                <label for="comida_2">Canja de Galinha</label><br />
+                                <input type="radio" name="comida" id="comida-3" value="lasanha" />
+                                <label for="comida_3">Lasanha</label><br />
+                                <input type="radio" name="comida" id="comida-4" value="miojo" />
+                                <label for="comida_4">Miojo sabor Frango</label><br />
+                            </p>
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend><h3>Bebidas</h3></legend>
+                            <p>
+                                <input type="radio" name="bebida" id="bebida-1" value="sucola" />
+                                <label for="bebida_1">Suco de Laranja</label><br />
+                                <input type="radio" name="bebida" id="bebida-2" value="sucom" />
+                                <label for="bebida_2">Suco de Morango</label><br />
+                                <input type="radio" name="bebida" id="bebida-3" value="sucoli" />
+                                <label for="bebida_3">Suco de Limão</label><br />
+                                <input type="radio" name="bebida" id="bebida-4" value="coca" />
+                                <label for="bebida_4">Coca-Cola</label><br />
+                            </p>
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend><h3>Canudos</h3></legend>
+                            <p>
+                                <input type="radio" name="opicional" id="opicional-1" value="sim" />
+                                <label for="opicional-1">Sim</label><br />
+                                <input type="radio" name="opicional" id="opicional-1" value="nao" />
+                                <label for="opicional-1">Não</label><br />
+                            </p>
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend><h3>Algo a solicitar no pedido?</h3></legend>
+                            <textarea></textarea>
+                        </fieldset>
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <button type="submit">Confirmar Pedido</button><button type="reset">Refazer pedido</button>
+                </fieldset>
+                </p>
+            </fieldset>
+        </form>
+        </main>
     </body>
 
 </html>

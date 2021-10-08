@@ -9,13 +9,13 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Cantina do Jaun" />
         <meta property="og:description" content="Aqui você encontra lanches de outros mundo, vindos direto do espaço, escolha sua comida, escolha seu lanche e lembre dos animais!" />
-        <meta property="og:image" content="https://i2.wp.com/passeiosbaratosemsp.com.br/wp-content/uploads/2017/10/mama-concheta.jpg?fit=940%2C705&ssl=1" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/JonzCandy/Open-Graph/main/img/capa-do-site.jpg" />
         <!--Após terminar retornar para mudar-->
         <title>Cantina do Jaun</title>
     </head>
 
-    <body background="https://i2.wp.com/passeiosbaratosemsp.com.br/wp-content/uploads/2017/10/mama-concheta.jpg?fit=940%2C705&ssl=1">
-        <header style="text-align: center; background-image: radial-gradient( rgba(255,255,255,0.5), rgba(255,0,0,1));">
+    <body style="text-align: center; max-width: 600px; margin: auto;">
+        <header style=" background-color: rgb(255, 105, 222, 0.5);">
             <h1>
                 Bem vindo a Cantina do Jaun<br />
                 Vamos ver como satisfazer sua fome?
@@ -23,25 +23,17 @@
         </header>
 
         <main>
-        <form  style="text-align: center; padding: 20px; margin: auto;  max-width: 600px; background-color: rgba(150, 182, 64, 0.5);">
-            <fieldset style="border-radius: 20px; border-width: 15px;">
+        <form style="padding: 20px;">
+            <fieldset>
                 <h1>Solicitação a Cozinha</h1>
-                <fieldset>
-                    <legend><h3>Quem está atendendo a mesa?</h3></legend>
-                    <p>
-                        <label for="worker">Funcionario:</label><br />
-                        <input type="text" name="worker" />
-                    </p>
-                </fieldset>
-                <br />
                 <fieldset>
                     <legend><h3>Informações do Cliente</h3> </legend>
                     <p>
                         <label for="cliente">Nome do Cliente:</label><br />
                         <input type="text" name="cliente" id="cliente" />
                         <br />
-                        <label for="mesa">Numero da mesa:</label><br />
-                        <input type="number" name="mesa" id="mesa" required min="1" max="20" />
+                        <label for="cpf">Identificação por CPF:</label><br />
+                        <input type="number" name="cpf" id="cpf" />
                     </p>
                 </fieldset>
                 <br />
@@ -80,6 +72,16 @@
                             <legend><h3>Canudos</h3></legend>
                             <p>
                                 <input type="radio" name="opicional" id="opicional-1" value="sim" />
+                                <label for="opicional-1">Sim, sou um assassino de animais marinhos</label><br />
+                                <input type="radio" name="opicional" id="opicional-1" value="nao" />
+                                <label for="opicional-1">Não, eu protejo a vida marinha</label><br />
+                            </p>
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend><h3>Retirada na Cantina?</h3></legend>
+                            <p>
+                                <input type="radio" name="opicional" id="opicional-1" value="sim" />
                                 <label for="opicional-1">Sim</label><br />
                                 <input type="radio" name="opicional" id="opicional-1" value="nao" />
                                 <label for="opicional-1">Não</label><br />
@@ -88,7 +90,7 @@
                         <br />
                         <fieldset>
                             <legend><h3>Algo a solicitar no pedido?</h3></legend>
-                            <textarea></textarea>
+                            <textarea style="width: 400px; height: 150px"></textarea>
                         </fieldset>
                     </p>
                 </fieldset>
